@@ -23,11 +23,11 @@ int main (int argc, char *argv[]) {
 
     file_out.open(argv[3]);
 
-    if (std::strcmp(argv[1], "-l")) {
+    if (std::strcmp(argv[1], "-l") == 0) {
         while (file_in >> tmp) {
             file_out << l33tsp34k::conv_to_leetspeak(tmp);
         }
-    } else if (std::strcmp(argv[1], "-p")) {
+    } else if (std::strcmp(argv[1], "-p") == 0) {
         while (file_in >> tmp) {
             file_out << l33tsp34k::conv_to_plaintext(tmp);
         }
