@@ -10,6 +10,6 @@ l33tsp34k: l33tsp34k.o l33tsp34k_aux.o
 	$(CXX) l33tsp34k.o l33tsp34k_aux.o -o l33tsp34k
 
 clean:
-	rm -rf %.o
+	rm -rf *.o
 	rm -rf l33tsp34k
 	rm -rf l33tsp34k.exe
